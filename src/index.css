@@ -1,0 +1,206 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+
+  --color-background: var(--background);
+  --color-background-subtle: var(--background-subtle);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-card-muted: var(--card-muted);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-subtle: var(--primary-subtle);
+  --color-primary-border: var(--primary-border);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary-hover: var(--secondary-hover);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-border: var(--border);
+  --color-border-subtle: var(--border-subtle);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+}
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-heading: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+    
+    /* Light Theme - Single Pure Crisp White Canvas */
+    --background: #FFFFFF;
+    --background-subtle: #FAFAFB;
+    --foreground: #0F172A;
+    --card: #FFFFFF;
+    --card-foreground: #0F172A;
+    --card-muted: #F8FAFC;
+    --popover: #FFFFFF;
+    --popover-foreground: #0F172A;
+    
+    --primary: #FF5520;
+    --primary-foreground: #FFFFFF;
+    --primary-hover: #E64410;
+    --primary-subtle: #FFF4F0;
+    --primary-border: #FED7AA;
+
+    --secondary: #0F172A;
+    --secondary-foreground: #FFFFFF;
+    --secondary-hover: #1E293B;
+
+    --muted: #F1F5F9;
+    --muted-foreground: #475569;
+    
+    --accent: #F1F5F9;
+    --accent-foreground: #0F172A;
+    
+    --destructive: #DC2626;
+    --destructive-foreground: #FFFFFF;
+
+    --border: #E2E8F0;
+    --border-subtle: #F1F5F9;
+    --input: #E2E8F0;
+    --ring: #FF5520;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* Dark Theme - Pure Deep Black Luxury (#000000) */
+    --background: #000000;
+    --background-subtle: #000000;
+    --foreground: #F8FAFC;
+    --card: #080808;
+    --card-foreground: #F8FAFC;
+    --card-muted: #0D0D0E;
+    --popover: #080808;
+    --popover-foreground: #F8FAFC;
+    
+    --primary: #FF5520;
+    --primary-foreground: #FFFFFF;
+    --primary-hover: #FF6A38;
+    --primary-subtle: #2A1005;
+    --primary-border: #591F0A;
+
+    --secondary: #101014;
+    --secondary-foreground: #F8FAFC;
+    --secondary-hover: #1A1A20;
+
+    --muted: #121216;
+    --muted-foreground: #94A3B8;
+    
+    --accent: #141418;
+    --accent-foreground: #F8FAFC;
+    
+    --destructive: #DC2626;
+    --destructive-foreground: #FCA5A5;
+
+    --border: #1E1E24;
+    --border-subtle: #141418;
+    --input: #1C1C22;
+    --ring: #FF5520;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.25s ease, color 0.25s ease;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+  line-height: 1.65;
+  letter-spacing: -0.015em;
+}
+
+button, a, select, input[type="radio"], input[type="checkbox"], [role="button"], .cursor-pointer {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading);
+  letter-spacing: -0.025em;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-foreground);
+}
+
+/* Subtle dot grid pattern utility */
+.bg-dot-pattern {
+  background-image: radial-gradient(var(--border) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Sound Wave Animation */
+@keyframes wave-pulse {
+  0%, 100% { height: 6px; }
+  50% { height: 28px; }
+}
+
+.animate-wave {
+  animation: wave-pulse 1.2s ease-in-out infinite;
+}
+
+/* Hardware-Accelerated Smooth 60fps Marquee */
+@keyframes marquee-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee-smooth {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  animation: marquee-scroll 45s linear infinite;
+}
+
+.animate-marquee-smooth:hover {
+  animation-play-state: paused;
+}
+
+

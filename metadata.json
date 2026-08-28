@@ -1,0 +1,6 @@
+{
+  "name": "Sampark Solutions - Native-Language AI Voice Agents",
+  "description": "Modernize customer conversations for Indian SMEs with native-language AI voice agents, WhatsApp automation, and intelligent chatbots.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
