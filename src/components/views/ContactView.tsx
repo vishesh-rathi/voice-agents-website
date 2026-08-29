@@ -376,15 +376,21 @@ export const ContactView: React.FC = () => {
 
               <div className="space-y-3 text-xs sm:text-sm text-foreground/90">
                 <div className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" />
+                  <span className="w-4 h-4 rounded-full bg-emerald-500 flex items-center justify-center shrink-0 mt-0.5 shadow-xs shadow-emerald-500/30">
+                    <Check className="w-2.5 h-2.5 text-white" strokeWidth={3.5} />
+                  </span>
                   <span>Live walkthrough of Gujarati, Hindi & English voice agents</span>
                 </div>
                 <div className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" />
+                  <span className="w-4 h-4 rounded-full bg-emerald-500 flex items-center justify-center shrink-0 mt-0.5 shadow-xs shadow-emerald-500/30">
+                    <Check className="w-2.5 h-2.5 text-white" strokeWidth={3.5} />
+                  </span>
                   <span>Clear ROI estimation tailored for your operational volume</span>
                 </div>
                 <div className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" />
+                  <span className="w-4 h-4 rounded-full bg-emerald-500 flex items-center justify-center shrink-0 mt-0.5 shadow-xs shadow-emerald-500/30">
+                    <Check className="w-2.5 h-2.5 text-white" strokeWidth={3.5} />
+                  </span>
                   <span>Turnkey deployment roadmap with zero telephony downtime</span>
                 </div>
               </div>

@@ -141,12 +141,12 @@ export const DemoModal: React.FC = () => {
         </div>
 
         {submitSuccess ? (
-          <div className="p-6 sm:p-8 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-950 dark:text-emerald-200 space-y-4 text-center">
+          <div className="p-6 sm:p-8 rounded-2xl bg-emerald-500/5 border border-emerald-500/30 space-y-4 text-center">
             <CheckCircle2 className="w-12 h-12 text-emerald-600 dark:text-emerald-400 mx-auto" />
-            <h4 className="font-heading font-bold text-xl text-emerald-800 dark:text-emerald-300">
+            <h4 className="font-heading font-bold text-xl text-foreground">
               Demo Confirmed!
             </h4>
-            <p className="text-xs sm:text-sm leading-relaxed font-medium">
+            <p className="text-sm text-foreground leading-relaxed font-medium">
               {submitSuccess}
             </p>
             <button

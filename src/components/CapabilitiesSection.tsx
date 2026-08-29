@@ -28,7 +28,7 @@ export const CapabilitiesSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="max-w-3xl space-y-4 mb-14">
+        <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
           <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-muted text-muted-foreground text-xs font-bold uppercase tracking-wider border border-border">
             <span>CORE CAPABILITIES</span>
           </div>
@@ -48,17 +48,17 @@ export const CapabilitiesSection: React.FC = () => {
               id={`capability-card-${cap.id}`}
               className="group relative rounded-2xl bg-card border border-border p-7 lg:p-8 flex flex-col justify-between hover:border-primary/40 hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
             >
-              <div className="space-y-4">
-                <div className="flex items-center justify-between gap-3">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary transition-transform group-hover:scale-105 shrink-0">
                     {getIcon(cap.icon)}
                   </div>
-                  <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 shrink-0">
+                  <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
                     {cap.category}
                   </span>
                 </div>
 
-                <h3 className="font-heading font-bold text-xl lg:text-2xl text-foreground group-hover:text-primary transition-colors">
+                <h3 className="font-heading font-bold text-xl lg:text-2xl text-foreground group-hover:text-primary transition-colors leading-tight mb-3">
                   {cap.title}
                 </h3>
 

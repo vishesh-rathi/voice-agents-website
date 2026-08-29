@@ -31,11 +31,11 @@ export const FrameworkSection: React.FC = () => {
               className="relative rounded-2xl bg-card border border-border p-6 sm:p-7 flex flex-col justify-between hover:border-primary/40 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group"
             >
               <div className="space-y-4">
-                <div className="flex items-center justify-between pb-4 border-b border-border/60">
-                  <span className="font-mono text-2xl font-black text-primary">
+                <div className="flex items-center justify-between gap-2 pb-4 border-b border-border/60 min-h-[3.25rem]">
+                  <span className="font-mono text-2xl font-black text-primary shrink-0">
                     {step.stepNumber}
                   </span>
-                  <span className="text-xs font-bold tracking-wider text-muted-foreground uppercase px-2.5 py-0.5 rounded-md bg-muted">
+                  <span className="text-xs font-bold tracking-wider text-muted-foreground uppercase px-2.5 py-1 rounded-md bg-muted text-center leading-tight">
                     {step.category}
                   </span>
                 </div>

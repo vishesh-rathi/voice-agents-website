@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import { useWordPressContent } from '../providers/WordPressContentProvider';
 import { StylishUnderline } from './StylishUnderline';
 import { IndustrySolution } from '../types';
-import { 
-  ArrowRight, 
-  PhoneCall, 
-  MessageSquare, 
-  Sparkles, 
-  X, 
-  CheckCircle2, 
-  ArrowUpRight 
+import {
+  ArrowRight,
+  PhoneCall,
+  Sparkles,
+  X,
+  Check,
+  ArrowUpRight
 } from 'lucide-react';
+import { WhatsAppIcon } from './icons/WhatsAppIcon';
 
 export const IndustriesSection: React.FC = () => {
   const { industrySolutions, openDemoModalWithService, setCurrentTab } = useWordPressContent();
@@ -87,7 +87,7 @@ export const IndustriesSection: React.FC = () => {
                     </span>
                     <span>•</span>
                     <span className="flex items-center gap-1">
-                      <MessageSquare className="w-3 h-3 text-emerald-500" /> WhatsApp
+                      <WhatsAppIcon className="w-3 h-3 text-[#25D366]" /> WhatsApp
                     </span>
                   </div>
 
@@ -102,28 +102,6 @@ export const IndustriesSection: React.FC = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Bottom Banner */}
-        <div className="mt-14 rounded-2xl bg-card border border-border/80 p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xs">
-          <div>
-            <h4 className="font-heading font-bold text-lg sm:text-xl text-foreground">
-              Do not see your exact business sector?
-            </h4>
-            <p className="text-muted-foreground text-sm mt-1">
-              We design custom conversational workflows for high-volume inquiries and native-language desk operations.
-            </p>
-          </div>
-
-          <div className="flex items-center gap-3 shrink-0 w-full md:w-auto">
-            <button
-              onClick={() => setCurrentTab('industries')}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-muted text-foreground hover:bg-muted/80 px-6 py-3 rounded-full text-sm font-semibold transition-all group cursor-pointer"
-            >
-              <span>Explore All Industries</span>
-              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform text-muted-foreground" />
-            </button>
-          </div>
         </div>
 
       </div>
@@ -161,7 +139,9 @@ export const IndustriesSection: React.FC = () => {
               </h4>
               {selectedIndustry.features.map((feat, i) => (
                 <div key={i} className="flex items-start gap-2.5 text-sm text-foreground/90">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" />
+                  <span className="w-4 h-4 rounded-full bg-emerald-500 flex items-center justify-center shrink-0 mt-0.5 shadow-xs shadow-emerald-500/30">
+                    <Check className="w-2.5 h-2.5 text-white" strokeWidth={3.5} />
+                  </span>
                   <span>{feat}</span>
                 </div>
               ))}

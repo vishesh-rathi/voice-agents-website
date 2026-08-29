@@ -1,18 +1,14 @@
 import React, { useState } from 'react';
 import { useWordPressContent } from '../providers/WordPressContentProvider';
 import { StylishUnderline } from './StylishUnderline';
-import { 
-  Building, 
-  Scissors, 
-  Hotel, 
-  Play, 
-  Volume2,
+import {
+  Building,
+  Scissors,
+  Hotel,
+  Play,
   VolumeX,
-  Sparkles, 
-  CheckCircle2, 
-  Languages, 
-  Clock, 
-  ShieldCheck,
+  Sparkles,
+  Languages,
   Bot
 } from 'lucide-react';
 import { PredefinedVoiceAgent } from '../types';
@@ -104,11 +100,11 @@ export const PredefinedVoiceAgentsSection: React.FC<{ compact?: boolean }> = ({ 
                 <div className="space-y-6">
                   
                   {/* Top Bar: Icon & Badge */}
-                  <div className="flex items-start justify-between gap-3">
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold transition-transform group-hover:scale-105">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold transition-transform group-hover:scale-105 shrink-0">
                       {getAgentIcon(agent.icon)}
                     </div>
-                    <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 shrink-0">
+                    <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
                       {agent.badge}
                     </span>
                   </div>
@@ -138,18 +134,6 @@ export const PredefinedVoiceAgentsSection: React.FC<{ compact?: boolean }> = ({ 
                     <p className="text-xs text-foreground font-medium italic leading-relaxed">
                       "{primaryScenario?.turns[1]?.text || 'Namaste! How may I assist you today?'}"
                     </p>
-                  </div>
-
-                  {/* Metrics Strip */}
-                  <div className="grid grid-cols-2 gap-3 pt-2 border-t border-border/60 text-center">
-                    <div className="p-2.5 rounded-lg bg-muted/50 border border-border/50">
-                      <p className="text-xs text-muted-foreground font-medium">Coverage</p>
-                      <p className="font-heading font-bold text-base text-foreground mt-0.5">{agent.metrics.resolutionRate}</p>
-                    </div>
-                    <div className="p-2.5 rounded-lg bg-muted/50 border border-border/50">
-                      <p className="text-xs text-muted-foreground font-medium">Avg Speed</p>
-                      <p className="font-heading font-bold text-base text-primary mt-0.5">{agent.metrics.avgHandlingTime}</p>
-                    </div>
                   </div>
 
                 </div>

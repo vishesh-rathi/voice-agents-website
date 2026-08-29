@@ -127,37 +127,28 @@ export const VoiceAgentsView: React.FC = () => {
             </p>
           </div>
 
-          {/* 9 Language Badges Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 max-w-5xl mx-auto">
-            {voiceLanguages.map((lang) => (
-              <div
-                key={lang.id}
-                className="bg-card rounded-2xl border border-border p-4 text-center space-y-2 hover:border-primary/40 hover:-translate-y-0.5 transition-all shadow-xs"
-              >
-                <div className="text-2xl font-bold font-heading text-primary">
-                  {lang.scriptChar}
+          {/* Language Marquee */}
+          <div className="relative w-full overflow-hidden py-4">
+            <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
+            <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
+
+            <div className="animate-marquee-smooth flex gap-4">
+              {[...voiceLanguages, ...voiceLanguages].map((lang, i) => (
+                <div
+                  key={`${lang.id}-${i}`}
+                  className="shrink-0 w-44 bg-card rounded-2xl border border-border p-4 text-center space-y-2 shadow-xs"
+                >
+                  <div className="text-2xl font-bold font-heading text-primary">
+                    {lang.scriptChar}
+                  </div>
+                  <h4 className="font-heading font-bold text-base text-foreground">
+                    {lang.name}
+                  </h4>
+                  <p className="text-xs font-semibold text-muted-foreground">
+                    {lang.region}
+                  </p>
                 </div>
-                <h4 className="font-heading font-bold text-base text-foreground">
-                  {lang.name}
-                </h4>
-                <p className="text-xs font-semibold text-muted-foreground">
-                  {lang.region}
-                </p>
-                <span className="inline-block text-xs font-bold px-2.5 py-0.5 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 rounded-full">
-                  Deployment Ready
-                </span>
-              </div>
-            ))}
-            <div className="bg-primary/10 rounded-2xl border border-primary/30 p-4 text-center space-y-2 flex flex-col items-center justify-center">
-              <div className="text-2xl font-bold font-heading text-primary">
-                +More
-              </div>
-              <h4 className="font-heading font-bold text-base text-foreground">
-                Dialect Adaptable
-              </h4>
-              <p className="text-xs font-medium text-muted-foreground">
-                Custom industry lexicons
-              </p>
+              ))}
             </div>
           </div>
 

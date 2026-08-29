@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { useWordPressContent } from '../../providers/WordPressContentProvider';
 import { StylishUnderline } from '../StylishUnderline';
-import { 
-  Bot, 
-  MessageSquare, 
-  Smartphone, 
-  Code2, 
+import {
+  Bot,
+  MessageSquare,
+  Smartphone,
+  Code2,
   Sparkles, 
   Send, 
   CheckCheck, 
@@ -28,6 +28,7 @@ import {
   Globe,
   Settings
 } from 'lucide-react';
+import { WhatsAppIcon } from '../icons/WhatsAppIcon';
 
 export const ChatbotsView: React.FC = () => {
   const { openDemoModalWithService } = useWordPressContent();
@@ -163,8 +164,8 @@ export const ChatbotsView: React.FC = () => {
           <div className="rounded-3xl bg-card border border-border/90 p-7 lg:p-8 flex flex-col justify-between hover:border-emerald-500/50 transition-all shadow-xs group relative overflow-hidden">
             <div className="space-y-4">
               <div className="flex items-center justify-between">
-                <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold">
-                  <MessageSquare className="w-6 h-6" />
+                <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 text-[#25D366] flex items-center justify-center font-bold">
+                  <WhatsAppIcon className="w-6 h-6" />
                 </div>
                 <span className="text-[11px] font-bold px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border border-emerald-500/20">
                   98% Open Rate
@@ -181,15 +182,21 @@ export const ChatbotsView: React.FC = () => {
 
               <ul className="space-y-2 pt-2 text-xs font-medium text-foreground/90">
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
+                  <span className="w-4 h-4 rounded-full bg-emerald-500 flex items-center justify-center shrink-0 shadow-xs shadow-emerald-500/30">
+                    <Check className="w-2.5 h-2.5 text-white" strokeWidth={3.5} />
+                  </span>
                   <span>Instant PDF brochure & quotation dispatch</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
+                  <span className="w-4 h-4 rounded-full bg-emerald-500 flex items-center justify-center shrink-0 shadow-xs shadow-emerald-500/30">
+                    <Check className="w-2.5 h-2.5 text-white" strokeWidth={3.5} />
+                  </span>
                   <span>WhatsApp Business number setup support</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
+                  <span className="w-4 h-4 rounded-full bg-emerald-500 flex items-center justify-center shrink-0 shadow-xs shadow-emerald-500/30">
+                    <Check className="w-2.5 h-2.5 text-white" strokeWidth={3.5} />
+                  </span>
                   <span>Interactive button messages & UPI payment links</span>
                 </li>
               </ul>
@@ -223,15 +230,21 @@ export const ChatbotsView: React.FC = () => {
 
               <ul className="space-y-2 pt-2 text-xs font-medium text-foreground/90">
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
+                  <span className="w-4 h-4 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-xs shadow-primary/30">
+                    <Check className="w-2.5 h-2.5 text-white" strokeWidth={3.5} />
+                  </span>
                   <span>WordPress, Shopify, Webflow & Wix compatibility</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
+                  <span className="w-4 h-4 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-xs shadow-primary/30">
+                    <Check className="w-2.5 h-2.5 text-white" strokeWidth={3.5} />
+                  </span>
                   <span>Custom branded theme matching your colors</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
+                  <span className="w-4 h-4 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-xs shadow-primary/30">
+                    <Check className="w-2.5 h-2.5 text-white" strokeWidth={3.5} />
+                  </span>
                   <span>Zero code rewrite or page speed slowdown</span>
                 </li>
               </ul>
@@ -265,15 +278,21 @@ export const ChatbotsView: React.FC = () => {
 
               <ul className="space-y-2 pt-2 text-xs font-medium text-foreground/90">
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-blue-500 shrink-0" />
+                  <span className="w-4 h-4 rounded-full bg-blue-500 flex items-center justify-center shrink-0 shadow-xs shadow-blue-500/30">
+                    <Check className="w-2.5 h-2.5 text-white" strokeWidth={3.5} />
+                  </span>
                   <span>Immediate automated appointment reminders</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-blue-500 shrink-0" />
+                  <span className="w-4 h-4 rounded-full bg-blue-500 flex items-center justify-center shrink-0 shadow-xs shadow-blue-500/30">
+                    <Check className="w-2.5 h-2.5 text-white" strokeWidth={3.5} />
+                  </span>
                   <span>Missed-call fallback with WhatsApp link</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-blue-500 shrink-0" />
+                  <span className="w-4 h-4 rounded-full bg-blue-500 flex items-center justify-center shrink-0 shadow-xs shadow-blue-500/30">
+                    <Check className="w-2.5 h-2.5 text-white" strokeWidth={3.5} />
+                  </span>
                   <span>Full DLT principal entity registration support</span>
                 </li>
               </ul>
@@ -314,7 +333,7 @@ export const ChatbotsView: React.FC = () => {
                     : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
-                <MessageSquare className="w-4 h-4" />
+                <WhatsAppIcon className="w-4 h-4" />
                 <span>WhatsApp Flow</span>
               </button>
 
@@ -601,7 +620,7 @@ export const ChatbotsView: React.FC = () => {
       </section>
 
       {/* Enterprise Capabilities & Integrations Infinite Motion Marquee */}
-      <section className="bg-background py-16 lg:py-24 overflow-hidden">
+      <section className="bg-background py-8 lg:py-12 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           
           <div className="text-center max-w-3xl mx-auto space-y-3">
@@ -625,7 +644,7 @@ export const ChatbotsView: React.FC = () => {
 
           <div className="animate-marquee-smooth flex gap-6">
             {[
-              { name: 'WhatsApp Cloud API', cat: 'Meta Official', desc: 'Verified Green Tick & Bulk Broadcasts', icon: MessageSquare, tagColor: 'text-emerald-600 bg-emerald-500/10 border-emerald-500/20' },
+              { name: 'WhatsApp Cloud API', cat: 'Meta Official', desc: 'Verified Green Tick & Bulk Broadcasts', icon: WhatsAppIcon, tagColor: 'text-[#25D366] bg-emerald-500/10 border-emerald-500/20' },
               { name: 'WordPress & WooCommerce', cat: 'CMS / E-Commerce', desc: '1-Click Plugin & Live Product Sync', icon: Globe, tagColor: 'text-blue-600 bg-blue-500/10 border-blue-500/20' },
               { name: 'Zoho CRM & Bigin', cat: 'Indian CRM Leader', desc: 'Auto Lead Capture & Deal Pipeline Routing', icon: Database, tagColor: 'text-amber-600 bg-amber-500/10 border-amber-500/20' },
               { name: 'Razorpay & UPI Collect', cat: 'Payment Gateways', desc: 'In-Chat Instant Payment Link Collection', icon: CreditCard, tagColor: 'text-indigo-600 bg-indigo-500/10 border-indigo-500/20' },
@@ -635,7 +654,7 @@ export const ChatbotsView: React.FC = () => {
               { name: 'Google Sheets & Drive', cat: 'Workspace Cloud', desc: 'Instant Row Append & Cloud Document Delivery', icon: FileText, tagColor: 'text-green-600 bg-green-500/10 border-green-500/20' },
               { name: 'LeadSquared', cat: 'Sales Execution', desc: 'High-Volume Lead Sync & Telephony Routing', icon: Smartphone, tagColor: 'text-purple-600 bg-purple-500/10 border-purple-500/20' },
               // Duplicate set to create seamless infinite loop
-              { name: 'WhatsApp Cloud API', cat: 'Meta Official', desc: 'Verified Green Tick & Bulk Broadcasts', icon: MessageSquare, tagColor: 'text-emerald-600 bg-emerald-500/10 border-emerald-500/20' },
+              { name: 'WhatsApp Cloud API', cat: 'Meta Official', desc: 'Verified Green Tick & Bulk Broadcasts', icon: WhatsAppIcon, tagColor: 'text-[#25D366] bg-emerald-500/10 border-emerald-500/20' },
               { name: 'WordPress & WooCommerce', cat: 'CMS / E-Commerce', desc: '1-Click Plugin & Live Product Sync', icon: Globe, tagColor: 'text-blue-600 bg-blue-500/10 border-blue-500/20' },
               { name: 'Zoho CRM & Bigin', cat: 'Indian CRM Leader', desc: 'Auto Lead Capture & Deal Pipeline Routing', icon: Database, tagColor: 'text-amber-600 bg-amber-500/10 border-amber-500/20' },
               { name: 'Razorpay & UPI Collect', cat: 'Payment Gateways', desc: 'In-Chat Instant Payment Link Collection', icon: CreditCard, tagColor: 'text-indigo-600 bg-indigo-500/10 border-indigo-500/20' },
