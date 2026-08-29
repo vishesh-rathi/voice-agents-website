@@ -53,19 +53,18 @@ export const HeroSection: React.FC = () => {
             {/* Top Pill */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs sm:text-sm font-bold tracking-wide shadow-2xs">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span>Pan-India AI Automation • Built for Indian Enterprises & SMEs</span>
+              <span>Voice AI for India's SMBs</span>
             </div>
 
             {/* Main Headline */}
             <h1 className="font-heading font-extrabold text-4xl sm:text-5xl lg:text-[3.85rem] leading-[1.12] tracking-tight text-foreground">
-              Modernizing Enterprise Conversations with <br className="hidden sm:inline" />
-              <StylishUnderline>Measurable AI</StylishUnderline> Voice Agents
+              AI that answers every call — <br className="hidden sm:inline" />
+              in <StylishUnderline>Hindi, Gujarati, English</StylishUnderline> and more
             </h1>
 
             {/* Subheading with larger, highly legible font */}
             <p className="text-muted-foreground text-lg sm:text-xl leading-relaxed max-w-2xl font-normal">
-              Sampark Solutions automates high-volume phone inquiries, qualifies high-intent leads, 
-              and locks verified bookings 24/7 across all major Indian languages with zero disruption to your telephony.
+              Sampark answers your customer calls, replies on WhatsApp, and books appointments — around the clock, in 10+ Indian languages. Works with your existing phone number. Live in a week.
             </p>
 
             {/* Action Area */}
@@ -105,11 +104,11 @@ export const HeroSection: React.FC = () => {
               </div>
               <div className="flex items-center gap-2.5 text-sm text-foreground">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
-                <span className="font-semibold">Zero Missed Calls 24/7</span>
+                <span className="font-semibold">Answers calls 24/7</span>
               </div>
               <div className="flex items-center gap-2.5 text-sm text-foreground">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
-                <span className="font-semibold">Instant CRM & WhatsApp Sync</span>
+                <span className="font-semibold">Instant WhatsApp Replies</span>
               </div>
             </div>
 
@@ -174,7 +173,7 @@ export const HeroSection: React.FC = () => {
                       <span>{activeAgent.name}</span>
                     </span>
                     <span className="text-[11px] bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-bold px-2 py-0.5 rounded-full">
-                      &lt;320ms Latency
+                      Live
                     </span>
                   </div>
 
@@ -209,8 +208,8 @@ export const HeroSection: React.FC = () => {
                       {activeAgent.metrics.resolutionRate}
                     </div>
                     <div>
-                      <p className="text-xs font-bold text-foreground">First-Call Resolution</p>
-                      <p className="text-[11px] text-muted-foreground">Automated outcomes</p>
+                      <p className="text-xs font-bold text-foreground">Automation Coverage</p>
+                      <p className="text-[11px] text-muted-foreground">Handled without escalation</p>
                     </div>
                   </div>
 

@@ -85,7 +85,7 @@ export const PredefinedVoiceAgentsSection: React.FC<{ compact?: boolean }> = ({ 
           </h2>
 
           <p className="text-muted-foreground text-base sm:text-lg leading-relaxed font-normal">
-            Experience how our conversational voice agents handle real customer inquiries, scheduling logic, and CRM follow-ups with sub-350ms latency across regional Indian languages.
+            Experience how our conversational voice agents handle real customer inquiries, scheduling logic, and follow-ups in regional Indian languages.
           </p>
         </div>
 
@@ -133,7 +133,7 @@ export const PredefinedVoiceAgentsSection: React.FC<{ compact?: boolean }> = ({ 
                   <div className="p-4 rounded-xl bg-muted/50 border border-border/80 space-y-2">
                     <div className="flex items-center justify-between text-xs font-semibold text-muted-foreground">
                       <span>Sample ({primaryScenario?.language})</span>
-                      <span className="text-emerald-600 dark:text-emerald-400 font-mono font-bold">&lt;320ms</span>
+                      <span className="text-emerald-600 dark:text-emerald-400 font-mono font-bold">Live</span>
                     </div>
                     <p className="text-xs text-foreground font-medium italic leading-relaxed">
                       "{primaryScenario?.turns[1]?.text || 'Namaste! How may I assist you today?'}"
@@ -143,7 +143,7 @@ export const PredefinedVoiceAgentsSection: React.FC<{ compact?: boolean }> = ({ 
                   {/* Metrics Strip */}
                   <div className="grid grid-cols-2 gap-3 pt-2 border-t border-border/60 text-center">
                     <div className="p-2.5 rounded-lg bg-muted/50 border border-border/50">
-                      <p className="text-xs text-muted-foreground font-medium">Resolution</p>
+                      <p className="text-xs text-muted-foreground font-medium">Coverage</p>
                       <p className="font-heading font-bold text-base text-foreground mt-0.5">{agent.metrics.resolutionRate}</p>
                     </div>
                     <div className="p-2.5 rounded-lg bg-muted/50 border border-border/50">

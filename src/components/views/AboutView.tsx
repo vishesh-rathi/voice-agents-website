@@ -32,11 +32,11 @@ export const AboutView: React.FC = () => {
             </div>
 
             <h1 className="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-foreground tracking-tight leading-tight">
-              Engineering practical AI for <StylishUnderline>Indian enterprises</StylishUnderline> with measurable impact.
+              Engineering practical AI for <StylishUnderline>Indian SMBs</StylishUnderline> with measurable impact.
             </h1>
 
             <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
-              Sampark Solutions started with a clear observation in Gujarat: while global AI headlines promised revolutions, Indian SMEs were left with complex tools built for Silicon Valley workflows that failed in local languages and real-world operations.
+              Sampark Solutions started with a clear observation in Gujarat: while global AI headlines promised revolutions, Indian SMBs were left with complex tools built for Silicon Valley workflows that failed in local languages and real-world operations.
             </p>
 
             <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
@@ -122,7 +122,7 @@ export const AboutView: React.FC = () => {
                     <p className="text-sm font-bold">Dedicated AI Engineers</p>
                   </div>
                   <p className="text-xs text-stone-300">
-                    Hands-on SME Implementation Team
+                    Hands-on SMB Implementation Team
                   </p>
                 </div>
               </div>
@@ -134,16 +134,16 @@ export const AboutView: React.FC = () => {
               {/* 3 Metric Pills */}
               <div className="grid grid-cols-3 gap-3 text-center pt-2">
                 <div className="p-3 rounded-xl bg-muted/30 border border-border">
-                  <div className="font-heading font-black text-2xl text-foreground">15+</div>
-                  <p className="text-[11px] text-muted-foreground font-medium mt-0.5">Team & Tech Specialists</p>
+                  <div className="font-heading font-black text-lg text-foreground leading-tight">India-first</div>
+                  <p className="text-[11px] text-muted-foreground font-medium mt-0.5">Built for SMB workflows</p>
                 </div>
                 <div className="p-3 rounded-xl bg-muted/30 border border-border">
-                  <div className="font-heading font-black text-2xl text-primary">100%</div>
-                  <p className="text-[11px] text-muted-foreground font-medium mt-0.5">Practical Implementation Focus</p>
+                  <div className="font-heading font-black text-lg text-primary leading-tight">Ship-first</div>
+                  <p className="text-[11px] text-muted-foreground font-medium mt-0.5">Practical, not speculative</p>
                 </div>
                 <div className="p-3 rounded-xl bg-muted/30 border border-border">
-                  <div className="font-heading font-black text-2xl text-foreground">24/7</div>
-                  <p className="text-[11px] text-muted-foreground font-medium mt-0.5">Automated Customer Support</p>
+                  <div className="font-heading font-black text-lg text-foreground leading-tight">24/7</div>
+                  <p className="text-[11px] text-muted-foreground font-medium mt-0.5">Automated customer support</p>
                 </div>
               </div>
 
@@ -165,7 +165,7 @@ export const AboutView: React.FC = () => {
               AI Should Deliver <StylishUnderline>Measurable Value</StylishUnderline>, Not Tech Hype
             </h2>
             <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
-              We believe Indian SMEs don't need buzzwords. You need dependable automation that answers customer inquiries, captures lost leads, and cuts repetitive manual effort.
+              We believe Indian SMBs don't need buzzwords. You need dependable automation that answers customer inquiries, captures lost leads, and cuts repetitive manual effort.
             </p>
           </div>
 
@@ -174,57 +174,57 @@ export const AboutView: React.FC = () => {
             
             {/* Box 1 */}
             <div className="rounded-2xl bg-card border border-border p-6 space-y-3 hover:border-primary/40 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
-              <div className="font-heading font-black text-4xl sm:text-5xl text-foreground">
-                0%
+              <div className="font-heading font-black text-3xl sm:text-4xl text-foreground leading-tight">
+                No hype
               </div>
               <div>
-                <h4 className="font-bold text-base text-foreground">Zero AI Hype</h4>
-                <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Tangible Business Outcomes</p>
+                <h4 className="font-bold text-base text-foreground">Ship over slides</h4>
+                <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Working automation, not decks</p>
               </div>
               <p className="text-muted-foreground text-xs leading-relaxed pt-2 border-t border-border/60">
-                We deploy systems that answer real calls, solve real customer inquiries, and reduce operational drag from day one.
+                We deploy systems that answer real calls and resolve real customer inquiries from day one.
               </p>
             </div>
 
             {/* Box 2 */}
             <div className="rounded-2xl bg-card border border-border p-6 space-y-3 hover:border-primary/40 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
-              <div className="font-heading font-black text-4xl sm:text-5xl text-primary">
-                100%
+              <div className="font-heading font-black text-3xl sm:text-4xl text-primary leading-tight">
+                Native
               </div>
               <div>
-                <h4 className="font-bold text-base text-foreground">Regional Fluency</h4>
-                <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Native Voice & WhatsApp</p>
+                <h4 className="font-bold text-base text-foreground">Regional fluency</h4>
+                <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Voice & WhatsApp in your customer's language</p>
               </div>
               <p className="text-muted-foreground text-xs leading-relaxed pt-2 border-t border-border/60">
-                Tailored for all major Indian languages and SME workflows so your customers speak comfortably in their mother tongue.
+                Tuned for Indian languages and SMB workflows so customers speak comfortably in their mother tongue.
               </p>
             </div>
 
             {/* Box 3 */}
             <div className="rounded-2xl bg-card border border-border p-6 space-y-3 hover:border-primary/40 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
-              <div className="font-heading font-black text-4xl sm:text-5xl text-foreground">
-                &lt; 3s
+              <div className="font-heading font-black text-3xl sm:text-4xl text-foreground leading-tight">
+                24/7
               </div>
               <div>
-                <h4 className="font-bold text-base text-foreground">Instant Response</h4>
-                <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Zero Missed Leads</p>
+                <h4 className="font-bold text-base text-foreground">Always-on desk</h4>
+                <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Answer after-hours calls too</p>
               </div>
               <p className="text-muted-foreground text-xs leading-relaxed pt-2 border-t border-border/60">
-                Eliminate hold times and missed inquiries with 24/7 automated qualification and intelligent routing.
+                Eliminate hold times and missed inquiries — the AI picks up whether you're open or closed.
               </p>
             </div>
 
             {/* Box 4 */}
             <div className="rounded-2xl bg-card border border-border p-6 space-y-3 hover:border-primary/40 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
-              <div className="font-heading font-black text-4xl sm:text-5xl text-primary">
-                3x
+              <div className="font-heading font-black text-3xl sm:text-4xl text-primary leading-tight">
+                Handoff
               </div>
               <div>
-                <h4 className="font-bold text-base text-foreground">Measurable ROI</h4>
-                <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Fast Payback Period</p>
+                <h4 className="font-bold text-base text-foreground">Human in the loop</h4>
+                <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider">AI knows when to escalate</p>
               </div>
               <p className="text-muted-foreground text-xs leading-relaxed pt-2 border-t border-border/60">
-                Practical automation engineered directly into your existing CRM, spreadsheets, and telephony with zero downtime.
+                Every conversation has escalation rules you configure — the AI knows when to hand a caller to your team.
               </p>
             </div>
 
@@ -238,7 +238,7 @@ export const AboutView: React.FC = () => {
               </div>
               <h4 className="font-bold text-base text-foreground">Practical Over Experimental</h4>
               <p className="text-muted-foreground text-xs leading-relaxed">
-                We focus on proven automation that reliably delivers measurable revenue or cost savings.
+                We focus on practical automation designed to reduce missed leads, cut manual admin, and improve response times.
               </p>
             </div>
 

@@ -79,7 +79,7 @@ export const VoiceAgentsView: React.FC = () => {
           </h1>
 
           <p className="text-muted-foreground text-lg sm:text-xl leading-relaxed font-normal max-w-4xl">
-            Sampark Solutions builds conversational voice agents specifically tuned for Indian enterprise & SME workflows. Handle routine phone inquiries, capture qualified leads, and confirm appointments without adding headcount or leaving callers on hold.
+            Sampark Solutions builds conversational voice agents specifically tuned for Indian SMB workflows. Handle routine phone inquiries, capture qualified leads, and confirm appointments without adding headcount or leaving callers on hold.
           </p>
         </div>
 
@@ -156,7 +156,7 @@ export const VoiceAgentsView: React.FC = () => {
                 Dialect Adaptable
               </h4>
               <p className="text-xs font-medium text-muted-foreground">
-                Custom SME lexicons
+                Custom industry lexicons
               </p>
             </div>
           </div>
@@ -176,8 +176,8 @@ export const VoiceAgentsView: React.FC = () => {
             </div>
 
             <div className="rounded-2xl bg-card border border-border p-5 text-center space-y-1 hover:border-primary/30 transition-colors">
-              <div className="font-heading font-black text-3xl text-foreground">&lt;350ms</div>
-              <h4 className="font-bold text-sm text-foreground">Zero Translation Lag</h4>
+              <div className="font-heading font-black text-3xl text-foreground">Live</div>
+              <h4 className="font-bold text-sm text-foreground">Real-time Speech</h4>
               <p className="text-xs text-muted-foreground">Direct speech-to-intent routing</p>
             </div>
           </div>

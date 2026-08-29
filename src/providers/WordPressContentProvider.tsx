@@ -109,9 +109,9 @@ export const WordPressContentProvider: React.FC<{ children: React.ReactNode }> =
   const siteSettings: WordPressSiteSettings = {
     siteTitle: 'SAMPARK SOLUTIONS',
     tagline: "Modernize your customer conversations with native-language AI voice agents across all major Indian languages.",
-    heroPill: "Pan-India AI Automation • Built for Indian Enterprises & SMEs",
+    heroPill: "Voice AI for India's SMBs",
     contactEmail: 'contact@samparksolutions.in',
-    contactPhone: '+91 79 4008 8900',
+    contactPhone: '+91 90337 19303 / +91 97225 63599',
     location: 'Ahmedabad, Gujarat & Mumbai, Maharashtra',
     businessHours: 'Monday to Saturday: 9:00 AM - 6:30 PM IST',
     metrics: {
@@ -132,10 +132,10 @@ export const WordPressContentProvider: React.FC<{ children: React.ReactNode }> =
       name: 'Real Estate Inquiry & Visit Booking Agent',
       badge: 'High-Ticket Lead Qualification',
       role: 'Inbound Property Specialist',
-      tagline: 'Captures caller budget, BHK specifications, and locks verified weekend site visits on calendar.',
+      tagline: 'Captures caller budget, BHK specifications, and books weekend site visits on the calendar.',
       icon: 'Building',
       metrics: {
-        resolutionRate: '96.2%',
+        resolutionRate: 'High',
         avgHandlingTime: '1m 45s',
         escalationRate: '3.8%',
         bookingSuccess: '41.5%'
@@ -242,7 +242,7 @@ export const WordPressContentProvider: React.FC<{ children: React.ReactNode }> =
           ],
           finalOutcome: {
             actionBadge: 'Sample Flat Visit Confirmed',
-            summary: 'Gujarati conversation handled naturally with zero latency. Pre-approved bank info shared and Saturday 4 PM slot reserved.',
+            summary: 'Gujarati conversation handled naturally. Loan-eligibility info shared and Saturday 4 PM slot reserved.',
             webhookFired: 'POST /calendar/events → Event created: "Site Visit - SG Highway (Gujarati Lead)"'
           }
         }
@@ -256,7 +256,7 @@ export const WordPressContentProvider: React.FC<{ children: React.ReactNode }> =
       tagline: 'Schedules haircut & beard grooming slots, checks stylist availability, and manages automated reschedule follow-ups.',
       icon: 'Scissors',
       metrics: {
-        resolutionRate: '98.5%',
+        resolutionRate: 'High',
         avgHandlingTime: '48s',
         escalationRate: '1.2%',
         bookingSuccess: '89.4%'
@@ -345,7 +345,7 @@ export const WordPressContentProvider: React.FC<{ children: React.ReactNode }> =
       tagline: 'Handles room tariff queries, check-in policies, dining inquiries, and books stays across Indian languages.',
       icon: 'Hotel',
       metrics: {
-        resolutionRate: '97.8%',
+        resolutionRate: 'High',
         avgHandlingTime: '1m 15s',
         escalationRate: '2.1%',
         bookingSuccess: '74.2%'
@@ -556,15 +556,15 @@ export const WordPressContentProvider: React.FC<{ children: React.ReactNode }> =
     {
       id: 'clinics-healthcare',
       title: 'Clinics & Healthcare',
-      metric: '85% reduction in missed consultation calls',
+      metric: 'Answer patient calls after hours',
       badge: 'Voice & WhatsApp',
       description: 'Automate appointment bookings, send regional language medicine reminders, and handle patient inquiries around the clock without overwhelming the front desk.',
       image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=600&q=80',
-      tags: ['Voice AI', 'WhatsApp Reminders', 'EMR Integration'],
+      tags: ['Voice AI', 'WhatsApp Reminders', 'Appointments'],
       features: [
-        'Zero missed patient calls during peak clinic hours',
-        'Direct doctor schedule sync into Google Calendar / Practo',
-        'Prescription refilling & lab report lookup via WhatsApp'
+        'Pick up patient calls during peak clinic hours',
+        'Schedule appointments and read them back via WhatsApp',
+        'Prescription refill and lab report queries via WhatsApp'
       ],
       sampleWorkflow: {
         caller: 'Namaste, I want to book an appointment with Dr. Shah for tomorrow morning.',
@@ -575,15 +575,15 @@ export const WordPressContentProvider: React.FC<{ children: React.ReactNode }> =
     {
       id: 'retail-d2c',
       title: 'Retail & Regional D2C',
-      metric: '3.2x faster response time for new product inquiries',
+      metric: 'Answer product & order queries instantly',
       badge: 'Catalog WhatsApp AI',
-      description: 'Automate product availability queries, order status lookups, and multilingual WhatsApp broadcast sequences that keep Indian shoppers engaged.',
+      description: 'Automate product availability queries, order status lookups, and multilingual WhatsApp replies that keep Indian shoppers engaged.',
       image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=600&q=80',
-      tags: ['Catalog Sharing', 'Order Tracking', 'Abandoned Cart Recovery'],
+      tags: ['Catalog Sharing', 'Order Tracking', 'Cart Recovery'],
       features: [
-        '40% reduction in repetitive customer support tickets',
-        'Instant payment links with UPI & Razorpay support',
-        'Order tracking & automated delivery confirmations'
+        'Offload repetitive customer support questions',
+        'Send payment links inside the chat',
+        'Handle order tracking and delivery confirmations'
       ],
       sampleWorkflow: {
         caller: 'Maro parcel kyare aavshe? Order number 4920 chhe.',
@@ -594,15 +594,15 @@ export const WordPressContentProvider: React.FC<{ children: React.ReactNode }> =
     {
       id: 'real-estate',
       title: 'Real Estate & Builders',
-      metric: '92% lead qualification accuracy',
+      metric: 'Qualify leads 24/7 from ad campaigns',
       badge: 'Lead Qualification',
-      description: 'Qualify property buyer inquiries instantly from ad campaigns, share project brochures over WhatsApp, and schedule verified site visits 24/7.',
+      description: 'Qualify property buyer inquiries instantly from ad campaigns, share project brochures over WhatsApp, and schedule site visits around the clock.',
       image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80',
-      tags: ['Brochure Dispatch', 'Site Visit Booking', 'CRM Push'],
+      tags: ['Brochure Dispatch', 'Site Visit Booking', 'Lead Capture'],
       features: [
-        '3x faster response time for new project inquiries',
-        'Automated budget, BHK, and timeline qualification',
-        'Verified lead push directly into Salesforce/HubSpot/Google Sheets'
+        'Reply to new project inquiries around the clock',
+        'Capture budget, BHK, and timeline before handoff',
+        'Log qualified leads into a Google Sheet or your CRM'
       ],
       sampleWorkflow: {
         caller: 'What is the starting price for 3 BHK in SG Highway project?',
@@ -613,15 +613,15 @@ export const WordPressContentProvider: React.FC<{ children: React.ReactNode }> =
     {
       id: 'local-services',
       title: 'Local & Home Services',
-      metric: '40% after-hours bookings captured',
+      metric: 'Capture after-hours booking requests',
       badge: '24/7 Booking AI',
-      description: 'Capture service requests after hours, send instant quotes, and dispatch job updates to customers in their preferred regional dialect.',
+      description: 'Capture service requests after hours, send quotes, and update customers on job status in their preferred regional dialect.',
       image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=80',
-      tags: ['Emergency Dispatch', 'Instant Pricing', 'Technician Routing'],
+      tags: ['Emergency Dispatch', 'Job Booking', 'Technician Routing'],
       features: [
-        'Instant response during late evening and weekend emergency calls',
-        'Automated price estimation based on square footage / issue type',
-        'Direct WhatsApp technician dispatch notification'
+        'Respond to late-evening and weekend emergency calls',
+        'Send quote estimates based on issue type',
+        'Notify technicians via WhatsApp when jobs are booked'
       ],
       sampleWorkflow: {
         caller: 'AC ma thi pani pade chhe, urgent technician joiye chhe.',
@@ -632,15 +632,15 @@ export const WordPressContentProvider: React.FC<{ children: React.ReactNode }> =
     {
       id: 'institutes-coaching',
       title: 'Institutes & Coaching',
-      metric: '65% reduction in front-desk inquiry volume',
+      metric: 'Offload front-desk admissions questions',
       badge: 'Admissions Assistant',
-      description: 'Answer parent queries about fees, schedules, and test series in regional Indian languages, and qualify prospective student admissions automatically.',
+      description: 'Answer parent queries about fees, schedules, and test series in regional Indian languages, and register interested students for demo classes.',
       image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80',
-      tags: ['Syllabus PDF Push', 'Batch Timing Lookup', 'Demo Class Registration'],
+      tags: ['Syllabus PDFs', 'Batch Timings', 'Demo Class Signup'],
       features: [
-        'Higher admission inquiry conversion during peak seasons',
-        'Batch schedules & fee structure breakdown in native language',
-        'Automated entrance exam test date reminders via SMS'
+        'Answer admissions inquiries during peak seasons',
+        'Share batch schedules and fees in the parent\'s language',
+        'Register interested students for demo classes'
       ],
       sampleWorkflow: {
         caller: 'Class 11 JEE batch kab start ho rahi hai aur fees kya hai?',
@@ -651,15 +651,15 @@ export const WordPressContentProvider: React.FC<{ children: React.ReactNode }> =
     {
       id: 'manufacturing-b2b',
       title: 'Manufacturing & B2B Hubs',
-      metric: '24/7 order & dispatch bot',
+      metric: 'Handle dealer & dispatch queries 24/7',
       badge: 'Order & Dispatch Bot',
-      description: 'Keep dealers and suppliers updated on shipment tracking, pending ledger balances, and order confirmations without manual phone tag.',
+      description: 'Keep dealers and suppliers updated on order status and confirmations without manual phone tag.',
       image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80',
-      tags: ['ERP Sync', 'Ledger Inquiries', 'Truck Tracking'],
+      tags: ['Dealer Queries', 'Order Confirmations', 'Dispatch Updates'],
       features: [
-        'Consistent lead intake and RFQ capture during non-business hours',
-        'Dealer invoice balance lookups synced directly with Tally / SAP',
-        'Saves up to 15 administrative hours per operations desk weekly'
+        'Capture leads and RFQs outside business hours',
+        'Answer routine order status and dispatch queries',
+        'Cut down administrative back-and-forth on the operations desk'
       ],
       sampleWorkflow: {
         caller: 'Last invoice nu payment receipt ane GST invoice dispatch thayu?',
@@ -690,9 +690,9 @@ export const WordPressContentProvider: React.FC<{ children: React.ReactNode }> =
     {
       id: 'ai-consulting',
       title: 'AI Consulting & Custom Workflows',
-      category: 'SME Process Automation',
+      category: 'SMB Process Automation',
       icon: 'Workflow',
-      description: 'Hands-on workflow discovery, CRM/ERP integrations (Tally, Zoho, Salesforce), and practical deployment tailored specifically for Indian SME operations.',
+      description: 'Hands-on workflow discovery, CRM/ERP integrations (Tally, Zoho, Salesforce), and practical deployment tailored specifically for Indian SMB operations.',
       route: 'consulting'
     }
   ];
@@ -735,8 +735,8 @@ export const WordPressContentProvider: React.FC<{ children: React.ReactNode }> =
       id: 'step-1',
       step: 'Step 1: Discover',
       title: 'High-Value Workflow Audits',
-      description: 'We pinpoint exact manual bottlenecks in your sales, support, and dispatch queues, scoring each for immediate automation ROI.',
-      keyOutcome: '40%+ manual time reclaimable',
+      description: 'We pinpoint the manual bottlenecks in your sales, support, and dispatch queues, and score each for automation impact.',
+      keyOutcome: 'Prioritized automation targets',
       icon: 'Search'
     },
     {
@@ -751,16 +751,16 @@ export const WordPressContentProvider: React.FC<{ children: React.ReactNode }> =
       id: 'step-3',
       step: 'Step 3: Deploy',
       title: 'Native-Language Integrations',
-      description: 'Connect automated voice and WhatsApp workflows that speak all major Indian languages with natural conversational tone.',
-      keyOutcome: '100% regional language ready',
+      description: 'Connect automated voice and WhatsApp workflows that speak major Indian languages with a natural conversational tone.',
+      keyOutcome: 'Regional language ready',
       icon: 'Cpu'
     },
     {
       id: 'step-4',
       step: 'Step 4: Measure',
       title: 'Measurable Impact Dashboards',
-      description: 'Track response latencies, resolution percentages, and lead qualification throughput with clear, unfluffed metrics.',
-      keyOutcome: 'Under 1-minute resolution time',
+      description: 'Track response times, resolution rates, and lead qualification throughput with clear, unfluffed metrics.',
+      keyOutcome: 'Clear reporting cadence',
       icon: 'BarChart3'
     },
     {
@@ -768,14 +768,14 @@ export const WordPressContentProvider: React.FC<{ children: React.ReactNode }> =
       step: 'Step 5: Handover',
       title: 'Hands-on Team Enablement',
       description: 'We train your internal operational staff with straightforward playbooks so your business remains self-reliant.',
-      keyOutcome: '3 on-site/staff workshops',
+      keyOutcome: 'Staff enablement workshops',
       icon: 'Users'
     },
     {
       id: 'step-6',
       step: 'Step 6: Protect',
       title: 'Reliable & Secure Guardrails',
-      description: 'Every automated workflow operates with strict human-in-the-loop triggers and data safety standards tailored for Indian enterprises.',
+      description: 'Every automated workflow operates with strict human-in-the-loop triggers and data safety standards tailored for Indian SMBs.',
       keyOutcome: 'Human escalation built-in',
       icon: 'ShieldCheck'
     }
@@ -817,22 +817,41 @@ export const WordPressContentProvider: React.FC<{ children: React.ReactNode }> =
 
   // Form Submission Handler
   const submitContactForm = async (data: DemoBookingFormData): Promise<{ success: boolean; message: string }> => {
-    await new Promise(resolve => setTimeout(resolve, 800));
-    try {
-      const existing = JSON.parse(localStorage.getItem('sampark_demo_submissions') || '[]');
-      existing.push({
-        ...data,
-        submittedAt: new Date().toISOString(),
-        id: 'DEMO-' + Math.floor(100000 + Math.random() * 900000)
-      });
-      localStorage.setItem('sampark_demo_submissions', JSON.stringify(existing));
-    } catch {
-      // storage error fallback
+    const endpoint = import.meta.env.VITE_FORM_ENDPOINT;
+    const payload = {
+      ...data,
+      source: currentTab,
+      submittedAt: new Date().toISOString(),
+      id: 'DEMO-' + Math.floor(100000 + Math.random() * 900000)
+    };
+
+    let delivered = false;
+    if (endpoint) {
+      try {
+        await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify(payload)
+        });
+        delivered = true;
+      } catch {
+        // network failure — fall through to localStorage backup below
+      }
+    }
+
+    if (!delivered) {
+      try {
+        const existing = JSON.parse(localStorage.getItem('sampark_demo_submissions_backup') || '[]');
+        existing.push(payload);
+        localStorage.setItem('sampark_demo_submissions_backup', JSON.stringify(existing));
+      } catch {
+        // storage unavailable — nothing more we can do client-side
+      }
     }
 
     return {
       success: true,
-      message: `Thank you, ${data.fullName}! Your request for ${data.businessName} has been received. Our native-language AI specialist will connect with you at ${data.phone}.`
+      message: `Thank you, ${data.fullName}! Your request for ${data.businessName} has been received. Our team will connect with you at ${data.phone}.`
     };
   };
 

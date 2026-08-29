@@ -29,7 +29,7 @@ export const IndustriesSection: React.FC = () => {
             Built for how <StylishUnderline>Indian businesses</StylishUnderline> actually operate
           </h2>
           <p className="text-muted-foreground text-base sm:text-lg leading-relaxed font-normal">
-            From busy regional clinics to bustling retail storefronts, our voice agents and WhatsApp workflows are tuned for real customer speech, dialect nuances, and day-to-day SME workflows.
+            From busy regional clinics to bustling retail storefronts, our voice agents and WhatsApp workflows are tuned for real customer speech, dialect nuances, and day-to-day SMB workflows.
           </p>
         </div>
 

@@ -69,10 +69,6 @@ export const ChatbotsView: React.FC = () => {
   // SMS Simulator State
   const [smsScenario, setSmsScenario] = useState<'booking' | 'otp' | 'dispatch'>('booking');
 
-  // Integration Code Snippet Tab
-  const [activeCodeTab, setActiveCodeTab] = useState<'wordpress' | 'shopify' | 'react' | 'webflow'>('wordpress');
-  const [copiedCode, setCopiedCode] = useState(false);
-
   const handleSendWhatsApp = (e: React.FormEvent) => {
     e.preventDefault();
     if (!whatsappMsg.trim()) return;
@@ -129,69 +125,6 @@ export const ChatbotsView: React.FC = () => {
     }, 700);
   };
 
-  const codeSnippets: Record<string, { title: string; filename: string; code: string; note: string }> = {
-    wordpress: {
-      title: 'WordPress & WooCommerce',
-      filename: 'functions.php or Header Footer Code Manager',
-      code: `<!-- Sampark AI Omnichannel Chatbot for WordPress -->
-<script 
-  src="https://cdn.samparksolutions.in/widget/v2/sampark-chat.js" 
-  data-agent-id="spk_live_wp_9842" 
-  data-channels="whatsapp,web,sms" 
-  data-primary-lang="gu,hi,en" 
-  async>
-</script>`,
-      note: 'Paste into Header Footer Code Manager plugin or your child theme’s header. Works seamlessly with Elementor, Divi, and WooCommerce product pages.'
-    },
-    shopify: {
-      title: 'Shopify Store',
-      filename: 'layout/theme.liquid',
-      code: `<!-- Sampark AI Chatbot & WhatsApp Assistant for Shopify -->
-<script 
-  src="https://cdn.samparksolutions.in/widget/v2/sampark-shopify.js" 
-  data-store-id="{{ shop.permanent_domain }}" 
-  data-agent-id="spk_live_shop_7721" 
-  defer>
-</script>`,
-      note: 'Paste right before the closing </body> tag in theme.liquid. Automatically connects product catalog, order status tracking, and cart abandonment triggers.'
-    },
-    react: {
-      title: 'Next.js, React & Remix',
-      filename: 'components/SamparkChatbot.tsx',
-      code: `import Script from 'next/script';
-
-export function SamparkChatWidget() {
-  return (
-    <Script
-      src="https://cdn.samparksolutions.in/widget/v2/sampark-chat.js"
-      strategy="lazyOnload"
-      data-agent-id="spk_live_react_1092"
-      data-theme="auto"
-    />
-  );
-}`,
-      note: 'Drop into your root layout (app/layout.tsx or _app.tsx). Zero bundle size overhead, fully responsive, and works with dark/light themes.'
-    },
-    webflow: {
-      title: 'Webflow, Wix & Custom HTML',
-      filename: 'Site Settings > Custom Code > Footer Code',
-      code: `<!-- Sampark AI Embed Code -->
-<script 
-  src="https://cdn.samparksolutions.in/widget/v2/sampark-chat.js" 
-  data-agent-id="spk_live_custom_5510" 
-  data-position="bottom-right" 
-  async>
-</script>`,
-      note: 'Paste in Project Settings > Custom Code (Footer Code) or before </body> in your static HTML pages. Loads asynchronously without slowing down page load.'
-    }
-  };
-
-  const copyToClipboard = (text: string) => {
-    navigator.clipboard.writeText(text);
-    setCopiedCode(true);
-    setTimeout(() => setCopiedCode(false), 2000);
-  };
-
   return (
     <div id="chatbots-view" className="py-12 lg:py-16 space-y-24">
       
@@ -220,13 +153,6 @@ export function SamparkChatWidget() {
               <span>Book a Demo</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
-            <a
-              href="#prebuilt-integrations"
-              className="inline-flex items-center gap-2 bg-card hover:bg-muted/60 border border-border text-foreground px-6 py-3.5 rounded-full text-sm font-bold shadow-2xs transition-all active:scale-98 cursor-pointer"
-            >
-              <Code2 className="w-4 h-4 text-primary" />
-              <span>Explore 1-Minute Website Embeds</span>
-            </a>
           </div>
         </div>
 
@@ -260,7 +186,7 @@ export function SamparkChatWidget() {
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
-                  <span>Green tick verified business number support</span>
+                  <span>WhatsApp Business number setup support</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
@@ -292,7 +218,7 @@ export function SamparkChatWidget() {
               </h3>
 
               <p className="text-muted-foreground text-sm leading-relaxed font-normal">
-                Drop onto your existing WordPress, Shopify, Next.js, Webflow, or custom site without redesigning anything. Educates visitors on your exact products, captures verified phone numbers, and routes leads in real time.
+                Drop onto your existing WordPress, Shopify, Next.js, Webflow, or custom site without redesigning anything. Answers product questions, captures phone numbers, and routes leads to your team in real time.
               </p>
 
               <ul className="space-y-2 pt-2 text-xs font-medium text-foreground/90">
@@ -441,7 +367,7 @@ export function SamparkChatWidget() {
                     </div>
                   </div>
                   <span className="text-xs bg-black/20 dark:bg-white/10 px-3 py-1 rounded-md text-white font-mono font-semibold">
-                    Verified
+                    Demo
                   </span>
                 </div>
 
@@ -672,110 +598,6 @@ export function SamparkChatWidget() {
           </div>
 
         </div>
-      </section>
-
-      {/* Pre-Built Website Integrations: 1-Minute Code Snippets */}
-      <section id="prebuilt-integrations" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-        <div className="max-w-3xl space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider">
-            <Code2 className="w-3.5 h-3.5" />
-            <span>INTEGRATE ACROSS PRE-BUILT WEBSITES</span>
-          </div>
-
-          <h2 className="font-heading font-extrabold text-3xl sm:text-4xl text-foreground tracking-tight">
-            Works with any CMS or Custom Website in 60 Seconds
-          </h2>
-
-          <p className="text-muted-foreground text-base sm:text-lg leading-relaxed font-normal">
-            No need to redesign your site or hire external developers. Simply copy our lightweight script tag or install our pre-built plugins to instantly activate WhatsApp, SMS, and live website chat on your existing domain.
-          </p>
-        </div>
-
-        {/* Code Snippet Box */}
-        <div className="rounded-3xl bg-card border border-border shadow-xl overflow-hidden">
-          {/* Tabs */}
-          <div className="flex flex-wrap items-center justify-between gap-2 p-3 bg-muted/40 border-b border-border">
-            <div className="flex flex-wrap items-center gap-2">
-              <button
-                onClick={() => setActiveCodeTab('wordpress')}
-                className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
-                  activeCodeTab === 'wordpress'
-                    ? 'bg-card text-primary border border-border shadow-xs'
-                    : 'text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                WordPress & WooCommerce
-              </button>
-
-              <button
-                onClick={() => setActiveCodeTab('shopify')}
-                className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
-                  activeCodeTab === 'shopify'
-                    ? 'bg-card text-primary border border-border shadow-xs'
-                    : 'text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                Shopify Stores
-              </button>
-
-              <button
-                onClick={() => setActiveCodeTab('react')}
-                className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
-                  activeCodeTab === 'react'
-                    ? 'bg-card text-primary border border-border shadow-xs'
-                    : 'text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                Next.js / React
-              </button>
-
-              <button
-                onClick={() => setActiveCodeTab('webflow')}
-                className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
-                  activeCodeTab === 'webflow'
-                    ? 'bg-card text-primary border border-border shadow-xs'
-                    : 'text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                Webflow, Wix & HTML
-              </button>
-            </div>
-
-            <button
-              onClick={() => copyToClipboard(codeSnippets[activeCodeTab].code)}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-background border border-border text-xs font-bold text-foreground hover:bg-muted transition-colors cursor-pointer"
-            >
-              {copiedCode ? (
-                <>
-                  <Check className="w-3.5 h-3.5 text-emerald-500" />
-                  <span>Copied!</span>
-                </>
-              ) : (
-                <>
-                  <Copy className="w-3.5 h-3.5 text-muted-foreground" />
-                  <span>Copy Snippet</span>
-                </>
-              )}
-            </button>
-          </div>
-
-          {/* Code Content */}
-          <div className="p-6 sm:p-8 space-y-4">
-            <div className="flex items-center justify-between text-xs text-muted-foreground font-mono">
-              <span>Target: {codeSnippets[activeCodeTab].filename}</span>
-              <span className="text-emerald-600 dark:text-emerald-400 font-bold">● Production Ready</span>
-            </div>
-
-            <pre className="p-4 sm:p-5 rounded-2xl bg-zinc-950 text-zinc-100 font-mono text-xs sm:text-sm overflow-x-auto border border-zinc-800 leading-relaxed shadow-inner">
-              <code>{codeSnippets[activeCodeTab].code}</code>
-            </pre>
-
-            <div className="p-4 rounded-xl bg-primary/5 border border-primary/20 text-xs sm:text-sm text-foreground/90 font-medium leading-relaxed">
-              💡 <strong>Integration Note:</strong> {codeSnippets[activeCodeTab].note}
-            </div>
-          </div>
-        </div>
-
       </section>
 
       {/* Enterprise Capabilities & Integrations Infinite Motion Marquee */}

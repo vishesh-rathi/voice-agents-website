@@ -33,7 +33,7 @@ export const LiveChatbotWidget: React.FC = () => {
 
   const quickFaqs = [
     'How does Gujarati Voice AI work?',
-    'What is the pricing for SMEs?',
+    'What is the pricing for SMBs?',
     'How long does deployment take?',
     'Book a live demo'
   ];
@@ -60,14 +60,14 @@ export const LiveChatbotWidget: React.FC = () => {
       if (lower.includes('gujarati') || lower.includes('language') || lower.includes('hindi')) {
         botResponse = 'Our voice agents are natively trained on Gujarati, Hindi, Marathi, and 7+ other Indian languages with colloquial phrasing, regional accents, and zero translation delay.';
       } else if (lower.includes('price') || lower.includes('pricing') || lower.includes('cost')) {
-        botResponse = 'We offer practical, flat SME pricing tailored to your expected call/chat volume with zero hidden infrastructure costs. Most setups pay back their investment in under 30 days.';
+        botResponse = 'We offer practical, flat SMB pricing tailored to your expected call/chat volume with zero hidden infrastructure costs. Most setups pay back their investment in under 30 days.';
       } else if (lower.includes('deploy') || lower.includes('time') || lower.includes('setup')) {
         botResponse = 'Deployment is turnkey! Our engineering team configures, tests, and connects your voice agents and WhatsApp bots within 7 business days with zero phone system downtime.';
       } else if (lower.includes('demo') || lower.includes('book')) {
         botResponse = 'Great! I can open our priority demo calendar for you right now so our Gujarat AI specialists can walk you through a tailored simulation.';
         openDemoModalWithService('Live Chatbot Inquirer');
       } else {
-        botResponse = 'Thank you for reaching out! We build native voice agents and WhatsApp automations that handle 100% of customer inquiries. Would you like to schedule a 15-minute live demo?';
+        botResponse = 'Thank you for reaching out! We build native voice agents and WhatsApp automations for Indian SMBs. Would you like to schedule a 15-minute live demo?';
       }
 
       const reply: ChatMessage = {

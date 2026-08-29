@@ -12,10 +12,10 @@ import { CapabilitiesSection } from './components/CapabilitiesSection';
 import { FrameworkSection } from './components/FrameworkSection';
 import { IndustriesSection } from './components/IndustriesSection';
 import { ResultsSection } from './components/ResultsSection';
+import { FAQSection } from './components/FAQSection';
 import { Footer } from './components/Footer';
 import { DemoModal } from './components/DemoModal';
 import { VoiceSimulatorModal } from './components/VoiceSimulatorModal';
-import { LiveChatbotWidget } from './components/LiveChatbotWidget';
 
 import { PredefinedVoiceAgentsSection } from './components/PredefinedVoiceAgentsSection';
 
@@ -56,6 +56,7 @@ const MainLayout: React.FC = () => {
             <FrameworkSection />
             <IndustriesSection />
             <ResultsSection />
+            <FAQSection />
           </main>
         );
     }
@@ -70,7 +71,6 @@ const MainLayout: React.FC = () => {
       <Footer />
       <DemoModal />
       <VoiceSimulatorModal />
-      <LiveChatbotWidget />
     </div>
   );
 };

@@ -33,14 +33,14 @@ const serviceOptions: SelectOption[] = [
   { 
     value: 'AI Consulting & Custom Automation', 
     label: 'AI Consulting & Custom Automation',
-    badge: 'SME Focus',
+    badge: 'SMB Focus',
     icon: <Workflow className="w-4 h-4" />,
     description: 'Discovery audit, CRM/ERP integration, and operational workflows'
   },
   { 
     value: 'Full Operations Modernization', 
     label: 'Full Operations Modernization Suite',
-    badge: 'Enterprise',
+    badge: 'Full Suite',
     icon: <Building2 className="w-4 h-4" />,
     description: 'Complete voice, WhatsApp, web chat, and backend modernization'
   }

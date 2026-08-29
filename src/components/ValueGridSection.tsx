@@ -43,19 +43,19 @@ export const ValueGridSection: React.FC = () => {
                   <PhoneOff className="w-5 h-5" />
                 </div>
                 <span className="text-xs font-bold px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 shrink-0">
-                  0% Missed
+                  24/7 Pickup
                 </span>
               </div>
               <h3 className="font-heading font-bold text-xl text-foreground group-hover:text-primary transition-colors">
                 Fewer Missed Calls
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Native voice agents in all major Indian languages capture 100% of customer inquiries 24/7 so no business lead slips through.
+                Native-language voice agents answer inquiries around the clock, so leads outside office hours don't slip through.
               </p>
             </div>
             <div className="pt-6 mt-6 border-t border-border/60 flex items-center justify-between text-xs text-muted-foreground">
               <span className="flex items-center gap-1.5 font-semibold text-foreground">
-                <Check className="w-4 h-4 text-primary" /> Guaranteed Outcome
+                <Check className="w-4 h-4 text-primary" /> Design Goal
               </span>
               <span className="font-mono text-muted-foreground font-semibold">01</span>
             </div>
@@ -84,7 +84,7 @@ export const ValueGridSection: React.FC = () => {
             </div>
             <div className="pt-6 mt-6 border-t border-border/60 flex items-center justify-between text-xs text-muted-foreground">
               <span className="flex items-center gap-1.5 font-semibold text-foreground">
-                <Check className="w-4 h-4 text-primary" /> Guaranteed Outcome
+                <Check className="w-4 h-4 text-primary" /> Design Goal
               </span>
               <span className="font-mono text-muted-foreground font-semibold">02</span>
             </div>
@@ -113,7 +113,7 @@ export const ValueGridSection: React.FC = () => {
             </div>
             <div className="pt-6 mt-6 border-t border-border/60 flex items-center justify-between text-xs text-muted-foreground">
               <span className="flex items-center gap-1.5 font-semibold text-foreground">
-                <Check className="w-4 h-4 text-primary" /> Guaranteed Outcome
+                <Check className="w-4 h-4 text-primary" /> Design Goal
               </span>
               <span className="font-mono text-muted-foreground font-semibold">03</span>
             </div>
@@ -130,7 +130,7 @@ export const ValueGridSection: React.FC = () => {
                   <HeartHandshake className="w-5 h-5" />
                 </div>
                 <span className="text-xs font-bold px-3 py-1 rounded-full bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/20 shrink-0">
-                  4.9/5 CSAT
+                  Empathetic
                 </span>
               </div>
               <h3 className="font-heading font-bold text-xl text-foreground group-hover:text-primary transition-colors">
@@ -142,7 +142,7 @@ export const ValueGridSection: React.FC = () => {
             </div>
             <div className="pt-6 mt-6 border-t border-border/60 flex items-center justify-between text-xs text-muted-foreground">
               <span className="flex items-center gap-1.5 font-semibold text-foreground">
-                <Check className="w-4 h-4 text-primary" /> Guaranteed Outcome
+                <Check className="w-4 h-4 text-primary" /> Design Goal
               </span>
               <span className="font-mono text-muted-foreground font-semibold">04</span>
             </div>
@@ -171,13 +171,13 @@ export const ValueGridSection: React.FC = () => {
             </div>
             <div className="pt-6 mt-6 border-t border-border/60 flex items-center justify-between text-xs text-muted-foreground">
               <span className="flex items-center gap-1.5 font-semibold text-foreground">
-                <Check className="w-4 h-4 text-primary" /> Guaranteed Outcome
+                <Check className="w-4 h-4 text-primary" /> Design Goal
               </span>
               <span className="font-mono text-muted-foreground font-semibold">05</span>
             </div>
           </div>
 
-          {/* Card 6: Enterprise Security & Privacy */}
+          {/* Card 6: Privacy & Security */}
           <div 
             id="benefit-card-6"
             className="group relative rounded-2xl bg-card border border-border p-7 flex flex-col justify-between hover:border-primary/40 hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
@@ -192,7 +192,7 @@ export const ValueGridSection: React.FC = () => {
                 </span>
               </div>
               <h3 className="font-heading font-bold text-xl text-foreground group-hover:text-primary transition-colors">
-                Enterprise Privacy & Security
+                Privacy & Security
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 Your customer data stays strictly protected with Indian data sovereignty compliance, encrypted storage, and granular access controls.
@@ -200,7 +200,7 @@ export const ValueGridSection: React.FC = () => {
             </div>
             <div className="pt-6 mt-6 border-t border-border/60 flex items-center justify-between text-xs text-muted-foreground">
               <span className="flex items-center gap-1.5 font-semibold text-foreground">
-                <Check className="w-4 h-4 text-primary" /> Guaranteed Outcome
+                <Check className="w-4 h-4 text-primary" /> Design Goal
               </span>
               <span className="font-mono text-muted-foreground font-semibold">06</span>
             </div>

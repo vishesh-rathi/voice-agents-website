@@ -47,7 +47,7 @@ export const ConsultingView: React.FC = () => {
           </h1>
 
           <p className="text-muted-foreground text-lg sm:text-xl leading-relaxed font-normal">
-            At Sampark Solutions, we steer clear of abstract buzzwords and untested technology. We help Indian SMEs identify high-impact operational friction, build tailored automations, and track concrete, measurable returns from day one.
+            At Sampark Solutions, we steer clear of abstract buzzwords and untested technology. We help Indian SMBs identify high-impact operational friction, build tailored automations, and track concrete, measurable returns from day one.
           </p>
 
           {/* 3 Top Value Points */}

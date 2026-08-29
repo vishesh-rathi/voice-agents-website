@@ -1,15 +1,12 @@
 import React from 'react';
 import { useWordPressContent } from '../providers/WordPressContentProvider';
 import { NavigationTab } from '../types';
-import { 
-  MapPin, 
-  Mail, 
-  Phone, 
-  Clock, 
-  Linkedin, 
-  Twitter, 
-  Facebook, 
-  ArrowRight 
+import {
+  MapPin,
+  Mail,
+  Phone,
+  Clock,
+  ArrowRight
 } from 'lucide-react';
 
 export const Footer: React.FC = () => {
@@ -169,7 +166,7 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex items-start gap-2.5">
                 <Phone className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                <span>+91 79 4008 8900</span>
+                <span>+91 90337 19303 / +91 97225 63599</span>
               </div>
               <div className="flex items-start gap-2.5">
                 <Clock className="w-4 h-4 text-primary shrink-0 mt-0.5" />
@@ -183,18 +180,6 @@ export const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
           <p>© {new Date().getFullYear()} Sampark Solutions. All rights reserved.</p>
-          
-          <div className="flex items-center gap-4 text-muted-foreground">
-            <a href="#/" className="hover:text-foreground transition-colors" aria-label="LinkedIn">
-              <Linkedin className="w-4 h-4" />
-            </a>
-            <a href="#/" className="hover:text-foreground transition-colors" aria-label="Twitter">
-              <Twitter className="w-4 h-4" />
-            </a>
-            <a href="#/" className="hover:text-foreground transition-colors" aria-label="Facebook">
-              <Facebook className="w-4 h-4" />
-            </a>
-          </div>
         </div>
 
       </div>

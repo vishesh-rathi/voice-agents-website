@@ -18,7 +18,7 @@ export const FrameworkSection: React.FC = () => {
             How We Deploy <StylishUnderline>Practical AI</StylishUnderline> For Your Business
           </h2>
           <p className="text-muted-foreground text-base sm:text-lg leading-relaxed font-normal">
-            A clear, results-first approach tailored for Indian enterprises and SMEs. We get your intelligent voice and chat agents running smoothly without disrupting your daily business operations.
+            A clear, results-first approach tailored for Indian small & medium businesses. We get your voice and chat agents running smoothly without disrupting your daily operations.
           </p>
         </div>
 
